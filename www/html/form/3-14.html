@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<h1>PHP基礎</h1>
+	<a href="../">top</a>
+	<h2>テキストボックスを置いて名前を入力して、その内容を画面に表示する。</h2>
+	<h3>１）フォームアクションをGET で実装してください。</h3>
+	<form name="form" action="3-14-1.php" method="get">
+		<label for="name">Enter your name: </label>
+		<input type="text" name="name" id="name">
+		<button type="submit" name="subscribe" value="send">Subscribe</button>
+	</form>
+	<hr>
+	<h3>２）フォームアクションをPOSTでも実装してください。</h3>
+	<form name="form" action="3-14-2.php" method="post">
+		<label for="email">Enter your email: </label>
+		<input type="text" name="email" id="email">
+		<button type="submit" name="subscribe" value="send">Subscribe</button>
+	</form>
+</body>
+</html>

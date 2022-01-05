@@ -121,5 +121,9 @@
 			unset($key1, $value1, $key2, $value2);
 		?>
 	</p>
+	<hr>
+
+	<h2>14. テキストボックスを置いて名前を入力して、その内容を画面に表示する。</h2>
+	<?php echo "<a href='form/3-14.html' >こちらに実装</a>" ?>
 </body>
 </html>
