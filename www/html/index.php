@@ -8,7 +8,7 @@
 	<title>Document</title>
 </head>
 <body>
-	<h1>PHPでHello World!</h1>
+	<h1>PHP基礎</h1>
 	<h2>1. index.phpという名前でファイルを作成し、PHPを使用して、「Hello World」と出力してくださいね。</h2>
   <p><?php echo "Hello World" ?></p>
 	<hr>
@@ -62,33 +62,64 @@
 	<hr>
 
 	<h2>8. 「りんご」「みかん」「いちご」「ぶどう」の配列を返す関数を作成してください。</h2>
-	<?php
-		 function createFruitsArray(): array {
-			 return ["りんご", "みかん", "いちご", "ぶどう"];
-		 }
-		 $fruitsArray = createFruitsArray();
-	?>
-	<p><?php print_r($fruitsArray); ?></p>
+	<?php require_once __DIR__."/functions/3-8.php"?>
+	<p><?php print_r(createFruitsArray()); ?></p>
 	<hr>
 
 	<h2>9. 上記を引数で取得する個数を指定する関数に変更してください。<br>（引数で2を与えると「りんご」「みかん」の配列が返される）</h2>
-	<?php
-		function createFruitsArray2(int $num): array {
-			$fruitsArray2 = ["りんご", "みかん", "いちご", "ぶどう"];
-			return array_slice($fruitsArray2, 0, $num);
-		}
-	?>
+	<?php require_once __DIR__."/functions/3-9.php"?>
 	<p><?php print_r(createFruitsArray2(2)); ?></p>
 	<hr>
 
 	<h2>10. 引数で与えられた配列をループして表示する関数を作成してください。</h2>
+	<?php require_once __DIR__."/functions/3-10.php"?>
+	<p><?php showArrayValue($fruits); ?></p>
+	<hr>
+	
+	<h2>11. 作成した関数のみを別ファイルで保存し、require_onceを用いて読み込んでください。</h2>
+	<hr>
+	
+	<h2>12. keyが「Apple」「Orange」「Grape」で、valueが「りんご」「みかん」「ぶどう」という連想配列をループさせて表示してください。</h2>
 	<?php
-		function showArrayValue(array $array): void {
-			foreach ($array as $value) {
-				echo $value;
-			}
-		}
+		$fruitsArray = [
+			"Apple" => "りんご",
+			"Orange" => "みかん",
+			"Grape" => "ぶどう"
+		];
 	?>
-	<p><?php showArrayValue($fruitsArray); ?></p>
+	<p>
+		<?php foreach ($fruitsArray as $key1 => $value1) {
+			echo "<p>{$key1} : {$value1}</p>";
+		} unset($key1, $value1); ?>
+	</p>
+	<hr>
+	
+	<h2>13. keyが「en」「ja」で、valueが「Apple」「りんご」の連想配列を（「みかん」「ぶどう」も同形式で）配列としてもつ2次元配列を1次元目をループさせて表示してください。</h2>
+	<?php
+		$multiFruitsArray = [
+			[
+				"en" => "Apple",
+				"ja" => "りんご"
+			],
+			[
+				"en" => "Orange",
+				"ja" => "みかん"
+			],
+			[
+				"en" => "Grape",
+				"ja" => "ぶどう"
+			]
+		]
+	?>
+	<p>
+		<?php
+			foreach ($multiFruitsArray as $key1 => $value1) {
+				foreach ($value1 as $key2 => $value2) {
+					echo "<p>{$key2} : {$value2}</p>";
+				}
+			}
+			unset($key1, $value1, $key2, $value2);
+		?>
+	</p>
 </body>
 </html>
