@@ -63,17 +63,20 @@
 
 	<h2>8. 「りんご」「みかん」「いちご」「ぶどう」の配列を返す関数を作成してください。</h2>
 	<?php require_once __DIR__."/functions/3-8.php"?>
-	<p><?php print_r(createFruitsArray()); ?></p>
+	<?php $fruit = new Fruits(); ?>
+	<p><?php print_r($fruit->getFruitsList()); ?></p>
 	<hr>
 
 	<h2>9. 上記を引数で取得する個数を指定する関数に変更してください。<br>（引数で2を与えると「りんご」「みかん」の配列が返される）</h2>
 	<?php require_once __DIR__."/functions/3-9.php"?>
-	<p><?php print_r(createFruitsArray2(2)); ?></p>
+	<?php $fruit2 = new Fruits2(); ?>
+	<p><?php print_r($fruit2->getFruitsList(2)); ?></p>
 	<hr>
 
 	<h2>10. 引数で与えられた配列をループして表示する関数を作成してください。</h2>
 	<?php require_once __DIR__."/functions/3-10.php"?>
-	<p><?php showArrayValue($fruits); ?></p>
+	<?php $fruit3 = new Fruits3(); ?>
+	<p><?php $fruit3->showArray($fruits) ?></p>
 	<hr>
 	
 	<h2>11. 作成した関数のみを別ファイルで保存し、require_onceを用いて読み込んでください。</h2>

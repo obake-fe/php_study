@@ -1,4 +1,12 @@
 <?php declare(strict_types=1);
-function createFruitsArray(): array {
-	return ["りんご", "みかん", "いちご", "ぶどう"];
+class Fruits {
+	private $fruitsList = ["りんご", "みかん", "いちご", "ぶどう"];
+	
+	/**
+	 * @return string[]
+	 */
+	public function getFruitsList(): array
+	{
+		return $this->fruitsList;
+	}
 }
