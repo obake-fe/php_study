@@ -124,6 +124,11 @@
 	<hr>
 
 	<h2>14. テキストボックスを置いて名前を入力して、その内容を画面に表示する。</h2>
-	<?php echo "<a href='form/3-14.html' >こちらに実装</a>" ?>
+	<?php echo "<a href='form/3-14.html' target='_blank' >こちらに実装</a>" ?>
+	<hr>
+
+	<h2>以下の仕様で3ファイル作成してください。<br>(1) form.php : テキストボックスを設置する。<br>(2) action.php : postのaction先。テキストボックスの内容をCookieに保存する。<br>(3) view.php : action.phpで保存されたCookieの内容を表示する。</h2>
+	<?php echo "<a href='3-15/form.php' target='_blank' >こちらに実装</a>" ?>
+	<hr>
 </body>
 </html>
