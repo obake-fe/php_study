@@ -124,15 +124,15 @@
 	<hr>
 
 	<h2>14. テキストボックスを置いて名前を入力して、その内容を画面に表示する。</h2>
-	<?php echo "<a href='3-14/index.html' target='_blank' >こちらに実装</a>" ?>
+	<a href='3-14/index.html' target='_blank' >こちらに実装</a>
 	<hr>
 
 	<h2>15. 以下の仕様で3ファイル作成してください。<br>(1) form.php : テキストボックスを設置する。<br>(2) action.php : postのaction先。テキストボックスの内容をCookieに保存する。<br>(3) view.php : action.phpで保存されたCookieの内容を表示する。</h2>
-	<?php echo "<a href='3-15/form.php' target='_blank' >こちらに実装</a>" ?>
+	<a href='3-15/form.php' target='_blank' >こちらに実装</a>
 	<hr>
 
 	<h2>16. 上記をSESSIONを用いて実現させてください。<br>（余裕があれば、違いを教えてください）</h2>
-	<?php echo "<a href='3-16/form.php' target='_blank' >こちらに実装</a>" ?>
+	<a href='3-16/form.php' target='_blank' >こちらに実装</a>
 	<ul>
 		<li>Cookieはクライアント側にデータが保存されるが、セッションはサーバ側にデータが保存される。</li>
 		<li>Cookieはユーザによってデータ改ざんが可能だが、セッション変数は不可。</li>
@@ -141,5 +141,8 @@
 	<a href="https://qiita.com/hththt/items/07136ad74127999df271" target="_blank" rel="noopener">Cookieとセッションをちゃんと理解する
 	 | Qiita</a>
 	<hr>
+
+	<h2>17. CSV ファイルを読み込んで、HTMLのTABLEタグで整形して、ブラウザに表示するプログラムを作ってください。<br>(CSV ファイルは自分で作成。)</h2>
+	<a href='3-17/input_csv.php' target='_blank' >こちらに実装</a>
 </body>
 </html>
