@@ -147,5 +147,21 @@
 
 	<h2>17. CSV ファイルを読み込んで、HTMLのTABLEタグで整形して、ブラウザに表示するプログラムを作ってください。<br>(CSV ファイルは自分で作成。)</h2>
 	<a href='3-17/input_csv.php' target='_blank' >こちらに実装</a>
+	<hr>
+
+	<h2>18. .htaccess を使ってフォルダにパスワードでベーシック認証をかけてください。<br>※docker で環境構築した場合は、nginxでベーシック認証を設定してください。</h2>
+	<a href='3-18/index.php' target='_blank' >こちらに実装</a>
+	<table border="1">
+		<tr>
+			<td>id</td>
+			<td>testuser</td>
+		</tr>
+		<tr>
+			<td>pass</td>
+			<td>testpass</td>
+		</tr>
+	</table>
+	<hr>
+
 </body>
 </html>
