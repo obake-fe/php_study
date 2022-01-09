@@ -167,5 +167,9 @@
 	<a href='3-19/index.php' target='_blank' >こちらに実装</a>
 	<hr>
 
+	<h2>20. アクセスされているブラウザがIEなのかChromeなのか、またPCなのかスマホなのかを判別してください<br>（FireMobileSimulatorを使用して確認）</h2>
+	<a href='3-20/index.php' target='_blank' >こちらに実装</a>
+	<hr>
+
 </body>
 </html>
