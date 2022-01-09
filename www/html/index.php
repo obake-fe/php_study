@@ -171,5 +171,13 @@
 	<a href='3-20/index.php' target='_blank' >こちらに実装</a>
 	<hr>
 
+	<h2>21. PHPで、ボーダー、またはストライプ柄のテーブルを表示してください。<br>(縦でも横でも、斜めでもOK)</h2>
+	<p>省略</p>
+	<hr>
+
+	<h2>22. htmlを使用せず、phpで画像を表示してください。</h2>
+	<a href='3-22/index.php' target='_blank' >こちらに実装</a>
+	<hr>
+
 </body>
 </html>
