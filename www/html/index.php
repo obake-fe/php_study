@@ -183,5 +183,8 @@
 	<a href='3-23/index.php' target='_blank' >こちらに実装</a>
 	<hr>
 
+	<h2>24. 23について、勝敗結果をカウントして表示する。<br>（ただしリロード対策を行い、多重送信されないようにする）</h2>
+	<a href='3-24/index.php' target='_blank' >こちらに実装</a>
+	<hr>
 </body>
 </html>
