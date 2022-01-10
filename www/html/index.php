@@ -179,5 +179,9 @@
 	<a href='3-22/index.php' target='_blank' >こちらに実装</a>
 	<hr>
 
+	<h2>23. じゃんけんげーむを作ってください。※勝った時と負けた時で背景色を変えてください。</h2>
+	<a href='3-23/index.php' target='_blank' >こちらに実装</a>
+	<hr>
+
 </body>
 </html>
