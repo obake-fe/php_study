@@ -5,12 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>バックエンド研修</title>
+	<title>4. SQL</title>
 </head>
 <body>
-	<h1>バックエンド研修</h1>
-	<h2><a href="3/index.php" target="_blank">3. PHP基礎</a></h2>
-	<h2><a href="4/index.php" target="_blank">4. SQL</a></h2>
-	
+	<h1>4. SQL</h1>
+	<h2>1. phpmyadminで「test」という名前でデータベースを作成し、そのデータベースに接続するPHPプログラムを記述してください</h2>
+	<a href='4-1/index.php' target='_blank' >こちらに実装</a>
+	<hr>
 </body>
 </html>
