@@ -12,5 +12,9 @@
 	<h2>1. phpmyadminで「test」という名前でデータベースを作成し、そのデータベースに接続するPHPプログラムを記述してください</h2>
 	<a href='4-1/index.php' target='_blank' >こちらに実装</a>
 	<hr>
+
+	<h2>2. 上記において、1/5の確率でわざと間違ったユーザ名を用いるようにして、成功の場合は「OK」、失敗の場合は「Database Connection Failed」 のみを表示してください。</h2>
+	<a href='4-2/index.php' target='_blank' >こちらに実装</a>
+	<hr>
 </body>
 </html>
