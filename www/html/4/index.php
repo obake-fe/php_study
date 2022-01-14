@@ -18,7 +18,27 @@
 	<hr>
 
 	<h2>3. SQL課題.sql をインポートしてください。<br>（ここからPHPは使わずSQLをテキストファイルで残してください）</h2>
-	<p>省略</p>
+	<p>課題ファイルがなかったので自作</p>
+	<ul>
+		<li><a href="sql/create-database.txt" target="_blank">create-database.txt</a></li>
+		<li><a href="sql/create-users-table.txt" target="_blank">create-users-table.txt</a></li>
+	</ul>
+	<hr>
+
+	<h2>4. usersテーブルを全て出力するselectのSQL</h2>
+	<a href="sql/4-4.txt" target="_blank">4-4.txt</a>
+	<hr>
+
+	<h2>5. 上記をstatusが0のみに絞り込んで出力するSQL</h2>
+	<a href="sql/4-5.txt" target="_blank">4-5.txt</a>
+	<hr>
+
+	<h2>6. 上記を学年の降順で出力するSQL</h2>
+	<a href="sql/4-6.txt" target="_blank">4-6.txt</a>
+	<hr>
+
+	<h2>7. 各クラス(学年と組の組合せ)ごとに何人の生徒がいるか？のSQL</h2>
+	<a href="sql/4-7.txt" target="_blank">4-7.txt</a>
 	<hr>
 </body>
 </html>

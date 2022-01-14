@@ -1,0 +1,1 @@
+SELECT * FROM php_study.users ORDER BY grade DESC;
