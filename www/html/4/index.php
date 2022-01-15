@@ -59,5 +59,21 @@
 	<h2>11. テスト日ごとに各教科の平均点を出力するSQL</h2>
 	<a href="sql/4-11.txt" target="_blank">4-11.txt</a>
 	<hr>
+
+	<h2>12. 各クラス、試験日ごとに「教科ごとの平均」と「合計点の平均」を出力するSQL</h2>
+	<a href="sql/4-12.txt" target="_blank">4-12.txt</a>
+	<hr>
+
+	<h2>13. users テーブルに一行追加するSQL</h2>
+	<a href="sql/4-13.txt" target="_blank">4-13.txt</a>
+	<hr>
+
+	<h2>14. users テーブルの一行を変更（名前の更新を）するSQL</h2>
+	<a href="sql/4-14.txt" target="_blank">4-14.txt</a>
+	<hr>
+
+	<h2>15. users テーブルの一行を削除するSQL</h2>
+	<a href="sql/4-15.txt" target="_blank">4-15.txt</a>
+	<hr>
 </body>
 </html>

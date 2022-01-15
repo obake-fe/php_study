@@ -1,0 +1,1 @@
+INSERT INTO php_study.users (status, name, grade, class) VALUES (0, '平松信彦', 3, 'C');

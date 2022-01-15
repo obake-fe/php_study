@@ -1,0 +1,1 @@
+SELECT grade, class, date, ROUND(AVG(language), 2) avg_language, ROUND(AVG(math), 2) avg_math, ROUND(AVG(science), 2) avg_science, ROUND(AVG(society), 2) avg_society FROM php_study.users INNER JOIN users_test_data ON users.id = users_test_data.id GROUP BY grade, class, date;

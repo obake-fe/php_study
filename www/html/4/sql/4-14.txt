@@ -1,0 +1,1 @@
+UPDATE php_study.users SET name = '坪田健志' WHERE id = 31;
