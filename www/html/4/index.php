@@ -22,6 +22,9 @@
 	<ul>
 		<li><a href="sql/create-database.txt" target="_blank">create-database.txt</a></li>
 		<li><a href="sql/create-users-table.txt" target="_blank">create-users-table.txt</a></li>
+		<li><a href="sql/create-users_test_data-table.txt" target="_blank">create-users_test_data-table.txt</a></li>
+		<li><a href="sql/insert-users.txt" target="_blank">insert-users.txt</a></li>
+		<li><a href="sql/insert-users_test_data.txt" target="_blank">insert-users_test_data.txt</a></li>
 	</ul>
 	<hr>
 
@@ -39,6 +42,22 @@
 
 	<h2>7. 各クラス(学年と組の組合せ)ごとに何人の生徒がいるか？のSQL</h2>
 	<a href="sql/4-7.txt" target="_blank">4-7.txt</a>
+	<hr>
+
+	<h2>8. user_test_dataテーブルを全て出力するSQL</h2>
+	<a href="sql/4-8.txt" target="_blank">4-8.txt</a>
+	<hr>
+
+	<h2>9. 上記を生徒の名前をあわせて出力するSQL</h2>
+	<a href="sql/4-9.txt" target="_blank">4-9.txt</a>
+	<hr>
+
+	<h2>10. 上記を生徒ごとの合計点を出力するSQL</h2>
+	<a href="sql/4-10.txt" target="_blank">4-10.txt</a>
+	<hr>
+
+	<h2>11. テスト日ごとに各教科の平均点を出力するSQL</h2>
+	<a href="sql/4-11.txt" target="_blank">4-11.txt</a>
 	<hr>
 </body>
 </html>

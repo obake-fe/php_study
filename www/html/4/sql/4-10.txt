@@ -1,0 +1,1 @@
+SELECT name, (language + math + science + society) AS total_score FROM users_test_data;

@@ -1,0 +1,1 @@
+SELECT php_study.users.id, users.name, users.grade, users.class, users_test_data.date, users_test_data.language, users_test_data.math, users_test_data.science, users_test_data.society FROM php_study.users INNER JOIN users_test_data ON users.name = users_test_data.name;

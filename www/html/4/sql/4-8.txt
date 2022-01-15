@@ -1,0 +1,1 @@
+SELECT * FROM users_test_data;
