@@ -91,5 +91,9 @@
 	<p>あるselect文の結果を別のSQL文で利用する文。</p>
 	<p></p>
 	<hr>
+
+	<h2>17. usersテーブルを全て出力するselectのSQLをPHPから実行し、結果をtableタグで整形して表示</h2>
+	<a href="4-17/index.php" target="_blank">こちらに実装</a>
+	<hr>
 </body>
 </html>
