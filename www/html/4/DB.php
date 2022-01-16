@@ -20,4 +20,8 @@
 				die();
 			}
 		}
+		
+		public function escape($value): string {
+			return htmlspecialchars((string)$value, ENT_QUOTES | ENT_HTML5);
+		}
 	}
