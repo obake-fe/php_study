@@ -28,7 +28,6 @@
 		$statement = $pdo->prepare("SELECT users.id, users.name, grade, class, language, math, science, society FROM php_study.users LEFT OUTER JOIN php_study.users_test_data ON users.id = users_test_data.id WHERE date = :date");
 		$statement->bindValue(":date", $_GET["date"], PDO::PARAM_INT);
 		$statement->execute();
-		$row = $statement->fetchAll(PDO::FETCH_ASSOC);
 	} catch (PDOException $e) {
 		echo "データ抽出に失敗しました。";
 		return;
@@ -46,7 +45,7 @@
 <body>
 <h3><?="{$_GET["date"]}のテスト結果"?></h3>
 <?php
-	if (empty($row[0])) {
+	if (!$statement->rowCount()) {
 		echo "<p>{$_GET["date"]}はデータが存在しない日付です。</p>";
 		return;
 	}
@@ -65,16 +64,16 @@
 	</tr>
 	</thead>
 	<tbody>
-	<?php foreach ($row as $item): ?>
+	<?php foreach ($statement as $row): ?>
 		<tr>
-			<td><?=($phpStudyDB->escape($item["id"]))?></td>
-			<td><?=($phpStudyDB->escape($item["name"]))?></td>
-			<td><?=($phpStudyDB->escape($item["grade"]))?></td>
-			<td><?=($phpStudyDB->escape($item["class"]))?></td>
-			<td><?=($phpStudyDB->escape($item["language"]))?></td>
-			<td><?=($phpStudyDB->escape($item["math"]))?></td>
-			<td><?=($phpStudyDB->escape($item["science"]))?></td>
-			<td><?=($phpStudyDB->escape($item["society"]))?></td>
+			<td><?=($phpStudyDB->escape($row["id"]))?></td>
+			<td><?=($phpStudyDB->escape($row["name"]))?></td>
+			<td><?=($phpStudyDB->escape($row["grade"]))?></td>
+			<td><?=($phpStudyDB->escape($row["class"]))?></td>
+			<td><?=($phpStudyDB->escape($row["language"]))?></td>
+			<td><?=($phpStudyDB->escape($row["math"]))?></td>
+			<td><?=($phpStudyDB->escape($row["science"]))?></td>
+			<td><?=($phpStudyDB->escape($row["society"]))?></td>
 		</tr>
 	<?php endforeach; ?>
 	</tbody>
