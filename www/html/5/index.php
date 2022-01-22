@@ -17,11 +17,15 @@
 		<li>http://news.finance.yahoo.co.jp/hoge/piyo/ → piyo</li>
 	</ul>
 	<p>※上記のどのURLを入れても、想定した結果がひとつ出力されるようにしてください。</p>
-	<form action="5-1/index.php" method="get">
+	<form action="5-2/index.php" method="get">
 		<label for="reg">input here : </label>
 		<input type="text" name="url" id="reg">
 		<button type="submit" name="translate" value="translate">translate</button>
 	</form>
+	<hr>
+	
+	<h2>3. 文字コードについて調べ、SJIS から UTF-8 にエンコーディングを変換する プログラムを作成してください。<br>・画面でもファイルでもいいので、文字コードが変換されていることが確認できる手段を用意しておく。</h2>
+	<a href="5-3/index.php" target="_blank">こちらに実装</a>
 	<hr>
 </body>
 </html>

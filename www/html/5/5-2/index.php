@@ -31,7 +31,7 @@ if(preg_match($pattern1, $url)) {
 	<meta name="viewport"
 				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>5-1</title>
+	<title>5-2</title>
 </head>
 <body>
 	<h2>2. ある URL (http://news.finance.yahoo.co.jp/detail.html) の前半を取り除いて、<br>ファイル名のみや、ディレクトリ名のみにして画面に表示するプログラムを作成してください。</h2>
