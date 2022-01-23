@@ -1,4 +1,19 @@
-<?php declare(strict_types=1); ?>
+<?php declare(strict_types=1);
+
+	/*
+	 * session delete for 5-4
+	 */
+	function deleteSession() {
+		if(ini_get("session.use_cookies")) {
+			$params = session_get_cookie_params();
+			setcookie(session_name(), "", time() - 42000, $params["path"], $params["domain"], $params["secure"], $params["httponly"]);
+		}
+	}
+	session_start();
+	$_SESSION = [];
+	deleteSession();
+	session_destroy();
+?>
 <!doctype html>
 <html lang="ja">
 <head>
@@ -26,6 +41,10 @@
 	
 	<h2>3. 文字コードについて調べ、SJIS から UTF-8 にエンコーディングを変換する プログラムを作成してください。<br>・画面でもファイルでもいいので、文字コードが変換されていることが確認できる手段を用意しておく。</h2>
 	<a href="5-3/index.php" target="_blank">こちらに実装</a>
+	<hr>
+	
+	<h2>4. 血液型を選択してボタンをクリックすると確認画面に遷移し、確認画面で「戻る」ボタンを押して前画面に戻ると、<br>確認画面に遷移した際に選択していた血液型が選択されている状態で戻ってくるページを作成してください。<br>・血液型は select - option で選択します。<br>・sessionを使用してください。</h2>
+	<a href="5-4/index.php" target="_blank">こちらに実装</a>
 	<hr>
 </body>
 </html>
