@@ -51,5 +51,9 @@
 	<h2>6. 上記において、保存ディレクトリのパスを defineを用いて記述してください</h2>
 	<a href="5-5/index.php" target="_blank">こちらに実装</a>
 	<hr>
+	
+	<h2>7. phpのプログラムで自分自身にメールを送ってください</h2>
+	<a href="5-7/index.php" target="_blank">こちらに実装</a>
+	<hr>
 </body>
 </html>
