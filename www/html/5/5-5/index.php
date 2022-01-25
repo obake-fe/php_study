@@ -12,6 +12,7 @@
 </head>
 <body>
 	<h2>5. &lt;input type=“file”&gt;を用いて、ユーザが任意のファイルをアップロードするプログラムを作成してください</h2>
+	<h2>6. 上記において、保存ディレクトリのパスを defineを用いて記述してください</h2>
 	<form action="complete.php" method="post" enctype="multipart/form-data">
 		<!-- アップロード上限サイズは2MB -->
 		<input type="hidden" name="max_file_size" value="2097152">

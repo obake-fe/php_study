@@ -66,7 +66,8 @@
 	}
 
 	$destinationPath = generateDestinationPath();
-	$moved = move_uploaded_file($_FILES["image1"]["tmp_name"], $destinationPath);
+	define("URL", __DIR__."/".$destinationPath);
+	$moved = move_uploaded_file($_FILES["image1"]["tmp_name"], URL);
 	if (!$moved) {
 		echo "アップロード処理中にエラーが発生しました。";
 	}
@@ -82,9 +83,10 @@
 </head>
 <body>
 	<h2>5. &lt;input type=“file”&gt;を用いて、ユーザが任意のファイルをアップロードするプログラムを作成してください</h2>
+	<h2>6. 上記において、保存ディレクトリのパスを defineを用いて記述してください</h2>
 	<p>アップロードに成功しました。保存された画像は以下です。</p>
-	<img src="<?=$destinationPath?>" style="width: 300px"><br>
-	<p>保存ファイル名 : <?=escape($destinationPath)?></p>
+	<img src="<?=$destinationPath?>" style="width: 300px" alt=""><br>
+	<p>保存ファイルパス : <?=escape(URL)?></p>
 	<p>元のファイル名 : <?=escape($_FILES["image1"]["name"])?></p>
 	<a href="index.php">戻る</a>
 </body>
