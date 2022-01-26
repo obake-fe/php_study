@@ -55,5 +55,9 @@
 	<h2>7. phpのプログラムで自分自身にメールを送ってください</h2>
 	<a href="5-7/index.php" target="_blank">こちらに実装</a>
 	<hr>
+	
+	<h2>8. SQL課題で作成したユーザ情報編集機能について、<br>select - option を用いステータスの更新もできるように改修、<br>ついでに確認画面を挟んで登録するようにしてください</h2>
+	<a href="5-8/index.php" target="_blank">こちらに実装</a>
+	<hr>
 </body>
 </html>
