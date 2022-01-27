@@ -59,5 +59,9 @@
 	<h2>8. SQL課題で作成したユーザ情報編集機能について、<br>select - option を用いステータスの更新もできるように改修、<br>ついでに確認画面を挟んで登録するようにしてください</h2>
 	<a href="5-8/index.php" target="_blank">こちらに実装</a>
 	<hr>
+	
+	<h2>9. さらにユーザの新規追加や削除もできる画面なり機能なりを追加</h2>
+	<a href="5-9/addForm.php" target="_blank">新規追加</a>
+	<hr>
 </body>
 </html>
