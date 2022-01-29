@@ -61,7 +61,8 @@
 	<hr>
 	
 	<h2>9. さらにユーザの新規追加や削除もできる画面なり機能なりを追加</h2>
-	<a href="5-9/addForm.php" target="_blank">新規追加</a>
+	<a href="5-9/addForm.php" target="_blank">新規追加</a><br>
+	<a href="5-9/deleteForm.php" target="_blank">削除</a>
 	<hr>
 </body>
 </html>
