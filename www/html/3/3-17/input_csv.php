@@ -19,7 +19,6 @@
 //			mb_convert_variables("UTF-8", "SJIS-win", $item);
 			$csvArray[] = $item;
 		}
-		unset($item);
 	?>
 	<table border="1">
 		<thead>
@@ -35,7 +34,6 @@
 						echo "<tr><td>{$item[0]}</td><td>{$item[1]}</td></tr>";
 					}
 				}
-				unset($item);
 			?>
 		</tbody>
 	</table>

@@ -7,7 +7,12 @@
 		["scissors" => "チョキ"],
 		["paper" => "パー"]
 	);
-	$cpu_pon = $pon_list[random_int(0, 2)];
+	
+	try {
+		$cpu_pon = $pon_list[random_int(0, 2)];
+	} catch (Exception $e) {
+		var_dump($e->getMessage());
+	}
 	
 	$result = null;
 	$text = null;
@@ -61,7 +66,6 @@
 			if (array_keys($pon)[0] === $_POST["pon"]) {
 				$self_pon_ja = array_values($pon)[0];
 			}
-			unset($pon);
 		}
 		$cpu_pon_ja = array_values($cpu_pon)[0];
 		echo "<p>自分 : {$self_pon_ja}</p><p>相手 : {$cpu_pon_ja}</p>$text";

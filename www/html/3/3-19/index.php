@@ -21,7 +21,6 @@
 			echo "<tr><td>{$key}</td>";
 			echo "<td>{$var}</td></tr>";
 		}
-		unset($key, $var);
 	?>
 </table>
 
