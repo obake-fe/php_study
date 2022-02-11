@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-	function encodeStringToSJIS () {
+	function encodeStringToSJIS (): string {
 		$txt = file("shiftjs.txt");
 		$convertedText = "";
 		
@@ -11,16 +11,11 @@
 		return $convertedText;
 	}
 	
-	function encodeVariablesToSJIS () {
+	function encodeVariablesToSJIS (): string {
 		$txt = file("shiftjs.txt");
-		$convertedText = "";
 		
 		mb_convert_variables("UTF-8", "SJIS-win", $txt);
-		foreach ($txt as $value) {
-			$convertedText .= $value;
-		}
-		
-		return $convertedText;
+		return implode('', $txt);
 	}
 ?>
 <!doctype html>
