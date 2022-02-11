@@ -28,10 +28,27 @@
 		$statement = $pdo->prepare("SELECT users.id, users.name, grade, class, date, language, math, science, society FROM php_study.users LEFT OUTER JOIN users_test_data ON users.id = users_test_data.id WHERE users.id = :id");
 		$statement->bindValue(":id", $_GET["id"], PDO::PARAM_INT);
 		$statement->execute();
+		$row = $statement->fetch(PDO::FETCH_ASSOC);
 	} catch (PDOException $e) {
 		echo "データ抽出に失敗しました。";
 		return;
 	}
+	
+	/**
+	 * @param $row
+	 * @param $phpStudyDB
+	 * @return string
+	 */
+	function showErrorText ($row, $phpStudyDB): string {
+		if (!$row) {
+			return "{$_GET["id"]}は存在しないidです。";
+		}
+		if (is_null($row["date"])) {
+			return "{$phpStudyDB->escape($row["name"])}はテストを受けてません。";
+		}
+		return "{$phpStudyDB->escape($row["name"])}の情報";
+	}
+	
 ?>
 <!doctype html>
 <html lang="ja">
@@ -44,45 +61,36 @@
 </head>
 <body>
 <h2>18. user_idを入力してユーザ情報とテスト結果を表示する<br>→存在しないuser_idなら存在しませんとメッセージを表示<br>→テスト結果がなければテスト受けてませんとメッセージを表示</h2>
-<?php
-	$row = $statement->fetch(PDO::FETCH_ASSOC);
-	if (!$row) {
-		echo "<p>{$_GET["id"]}は存在しないidです。</p>";
-		return;
-	}
-	if (is_null($row["date"])) {
-		echo "<p>{$phpStudyDB->escape($row["name"])}はテストを受けてません。</p>";
-		return;
-	}
-?>
-<table border="1">
-	<thead>
-	<tr>
-		<th>id</th>
-		<th>名前</th>
-		<th>学年</th>
-		<th>クラス</th>
-		<th>日付</th>
-		<th>国語</th>
-		<th>数学</th>
-		<th>理科</th>
-		<th>社会</th>
-	</tr>
-	</thead>
-	<tbody>
+<p><?=showErrorText($row, $phpStudyDB)?></p>
+<?php if ($row && !is_null($row["date"])) {?>
+	<table border="1">
+		<thead>
 		<tr>
-			<td><?=($phpStudyDB->escape($row["id"]))?></td>
-			<td><?=($phpStudyDB->escape($row["name"]))?></td>
-			<td><?=($phpStudyDB->escape($row["grade"]))?></td>
-			<td><?=($phpStudyDB->escape($row["class"]))?></td>
-			<td><?=($phpStudyDB->escape($row["date"]))?></td>
-			<td><?=($phpStudyDB->escape($row["language"]))?></td>
-			<td><?=($phpStudyDB->escape($row["math"]))?></td>
-			<td><?=($phpStudyDB->escape($row["science"]))?></td>
-			<td><?=($phpStudyDB->escape($row["society"]))?></td>
+			<th>id</th>
+			<th>名前</th>
+			<th>学年</th>
+			<th>クラス</th>
+			<th>日付</th>
+			<th>国語</th>
+			<th>数学</th>
+			<th>理科</th>
+			<th>社会</th>
 		</tr>
-	<?php ?>
-	</tbody>
-</table>
+		</thead>
+		<tbody>
+			<tr>
+				<td><?=($phpStudyDB->escape($row["id"]))?></td>
+				<td><?=($phpStudyDB->escape($row["name"]))?></td>
+				<td><?=($phpStudyDB->escape($row["grade"]))?></td>
+				<td><?=($phpStudyDB->escape($row["class"]))?></td>
+				<td><?=($phpStudyDB->escape($row["date"]))?></td>
+				<td><?=($phpStudyDB->escape($row["language"]))?></td>
+				<td><?=($phpStudyDB->escape($row["math"]))?></td>
+				<td><?=($phpStudyDB->escape($row["science"]))?></td>
+				<td><?=($phpStudyDB->escape($row["society"]))?></td>
+			</tr>
+		</tbody>
+	</table>
+<?php }?>
 </body>
 </html>

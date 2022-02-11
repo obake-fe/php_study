@@ -28,9 +28,25 @@
 		$statement = $pdo->prepare("SELECT users.id, users.name, grade, class, date, language, math, science, society FROM php_study.users LEFT OUTER JOIN php_study.users_test_data ON users.id = users_test_data.id WHERE users.id = :id");
 		$statement->bindValue(":id", $_GET["id"], PDO::PARAM_INT);
 		$statement->execute();
+		$row = $statement->fetch(PDO::FETCH_ASSOC);
 	} catch (PDOException $e) {
 		echo "データ抽出に失敗しました。";
 		return;
+	}
+	
+	/**
+	 * @param $row
+	 * @param $phpStudyDB
+	 * @return string
+	 */
+	function showErrorText ($row, $phpStudyDB): string {
+		if (!$row) {
+			return "{$_GET["id"]}は存在しないidです。";
+		}
+		if (is_null($row["date"])) {
+			return "{$phpStudyDB->escape($row["name"])}はテストを受けてません。";
+		}
+		return "{$phpStudyDB->escape($row["name"])}の情報";
 	}
 ?>
 <!doctype html>
@@ -43,13 +59,8 @@
 	<title>4-19</title>
 </head>
 <body>
-<?php
-	$row = $statement->fetch(PDO::FETCH_ASSOC);
-	if (!$row) {
-		echo "<p>{$_GET["id"]}は存在しないidです。</p>";
-		return;
-	}
-?>
+<p><?=showErrorText($row, $phpStudyDB)?></p>
+<?php if ($row && !is_null($row["date"])) {?>
 <h3>ユーザー情報</h3>
 <table border="1">
 	<thead>
@@ -67,16 +78,9 @@
 		<td><?=($phpStudyDB->escape($row["grade"]))?></td>
 		<td><?=($phpStudyDB->escape($row["class"]))?></td>
 	</tr>
-	<?php ?>
 	</tbody>
 </table>
 <h3>テスト結果</h3>
-<?php
-	if (is_null($row["date"])) {
-		echo "<p>{$phpStudyDB->escape($row["name"])}はテストを受けてません。</p>";
-		return;
-	}
-?>
 <table border="1">
 	<thead>
 	<tr>
@@ -95,8 +99,8 @@
 		<td><?=($phpStudyDB->escape($row["science"]))?></td>
 		<td><?=($phpStudyDB->escape($row["society"]))?></td>
 	</tr>
-	<?php ?>
 	</tbody>
 </table>
+<?php }?>
 </body>
 </html>

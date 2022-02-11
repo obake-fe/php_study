@@ -4,17 +4,21 @@
 		$password = "secret";
 		
 		$userList = array(
-			"root", "root1", "root2", "root3", "root4"
+			"root", "root", "root", "root", "root1"
 		);
-		$user = $userList[random_int(0,4)];
+		
+		try {
+			$user = $userList[random_int(0, 4)];
+		} catch (Exception $e) {
+		}
 		
 		try {
 			$pdo = new PDO($dsn, $user, $password);
 			$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-			return "OK";
+			return "ユーザー名: {$user}<br>接続に成功しました。";
 		} catch (PDOException $e) {
-			return "Database Connection Failed";
+			return "ユーザー名: {$user}<br>接続に失敗しました。".$e->getMessage();
 		}
 	}
 ?>

@@ -44,12 +44,9 @@
 </head>
 <body>
 <h3><?="{$_GET["date"]}のテスト結果"?></h3>
-<?php
-	if (!$statement->rowCount()) {
-		echo "<p>{$_GET["date"]}はデータが存在しない日付です。</p>";
-		return;
-	}
-?>
+<?php if (!$statement->rowCount()) { ?>
+	<p><?="{$_GET["date"]}はデータが存在しない日付です。"?></p>
+<?php } ?>
 <table border="1">
 	<thead>
 	<tr>

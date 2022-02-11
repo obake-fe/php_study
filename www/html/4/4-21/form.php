@@ -28,6 +28,7 @@
 		$statement = $pdo->prepare("SELECT * FROM users WHERE id = :id");
 		$statement->bindValue(":id", $_GET["id"], PDO::PARAM_INT);
 		$statement->execute();
+		$row = $statement->fetch(PDO::FETCH_ASSOC);
 	} catch (PDOException $e) {
 		echo "データ抽出に失敗しました。";
 		return;
@@ -43,13 +44,9 @@
 	<title>4-21</title>
 </head>
 <body>
-	<?php
-		if (!$statement->rowCount()) {
-			echo "<p>{$_GET["id"]}はデータが存在しないidです。</p>";
-			return;
-		}
-		$row = $statement->fetch(PDO::FETCH_ASSOC);
-	?>
+	<?php if (!$statement->rowCount()) { ?>
+		<p><?="{$_GET["id"]}はデータが存在しないidです。"?></p>
+	<?php } ?>
 	<h2><?=$phpStudyDB->escape($row["name"])?>の名前を変更する。</h2>
 	<form name="form" action="update.php" method="post">
 		<label for="name">Enter update name: </label>
