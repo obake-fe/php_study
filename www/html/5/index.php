@@ -69,5 +69,15 @@
 	<a href="5-10/addForm.php" target="_blank">新規追加</a><br>
 	<a href="5-10/deleteForm.php" target="_blank">削除</a>
 	<hr>
+	
+	<h2>11. さらにユーザ名にシングルクォーテーションが入れられても更新ができるように改修</h2>
+	<p>10と同様</p>
+	<hr>
+	
+	<h2>12. データベースに、メールアドレスとパスワードの2カラムのテーブルを作成し、<br>メアドとパスワードを入力して、一致するものがあるとOK、ないとNGと出すプログラムを作成<br>（パスワードはハッシュ化などせずにそのまま平文で保存）</h2>
+	<a href="5-12/create-idpass-table.sql" target="_blank">create-idpass-table.sql</a><br>
+	<a href="5-12/insert-users_idpass.sql" target="_blank">insert-users_idpass.sql</a><br>
+	<a href="5-12/index.php" target="_blank">こちらに実装</a>
+	<hr>
 </body>
 </html>
