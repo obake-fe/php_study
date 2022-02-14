@@ -2,13 +2,15 @@
 	
 	require_once __DIR__ . "/../UsersDB.php";
 	
-	$id = filter_input(INPUT_POST, "name");
+	$name = filter_input(INPUT_POST, "name");
+	$grade = filter_input(INPUT_POST, "grade");
+	$class = filter_input(INPUT_POST, "class");
 	
 	/*
 	 * redirect top if value is empty
 	 */
-	if(!$id) {
-		header("Location:deleteForm.php");
+	if(!$name || !$grade || !$class) {
+		header("Location:addForm.php");
 		return;
 	}
 	
@@ -23,22 +25,12 @@
 		return;
 	}
 	
-	/*
-	 * try to fetch data
-	 */
-	try {
-		$statement = $pdo->prepare("SELECT name FROM users WHERE id = :id");
-		$statement->bindValue(":id", $id, PDO::PARAM_INT);
-		$statement->execute();
-	} catch (PDOException $e) {
-		echo "データ抽出に失敗しました。";
-		return;
-	}
-	
 	session_start();
 	
 	$_SESSION["data"] = [
-		"id" => $id,
+		"name" => $name,
+		"grade" => $grade,
+		"class" => $class
 	];
 ?>
 <!doctype html>
@@ -48,15 +40,13 @@
 	<meta name="viewport"
 				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>5-9</title>
+	<title>5-10</title>
 </head>
 <body>
-	<h2>削除</h2>
-	<?php foreach ($statement as $row): ?>
-		<p><?=$row["name"]?> を削除しますか？</p>
-	<?php endforeach; ?>
-	<form action="deleteComplete.php" method="post">
-		<button type="submit" name="operation" value="add">削除する</button>
+	<h2>新規追加</h2>
+		<p><?="名前 : {$phpStudyDB->escape($name)}"?>、<?="学年 : {$grade}"?>、<?="クラス : {$class}"?>を追加しますか？</p>
+	<form action="addComplete.php" method="post">
+		<button type="submit" name="operation" value="add">追加する</button>
 	</form><br>
 	<a href="addForm.php">戻る</a>
 </body>

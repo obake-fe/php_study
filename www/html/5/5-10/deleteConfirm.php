@@ -48,12 +48,12 @@
 	<meta name="viewport"
 				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>5-9</title>
+	<title>5-10</title>
 </head>
 <body>
 	<h2>削除</h2>
 	<?php foreach ($statement as $row): ?>
-		<p><?=$row["name"]?> を削除しますか？</p>
+		<p><?=($phpStudyDB->escape($row["name"]))?> を削除しますか？</p>
 	<?php endforeach; ?>
 	<form action="deleteComplete.php" method="post">
 		<button type="submit" name="operation" value="add">削除する</button>

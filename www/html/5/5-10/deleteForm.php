@@ -41,15 +41,15 @@
 	<meta name="viewport"
 				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>5-9</title>
+	<title>5-10</title>
 </head>
 <body>
-	<h2>9. さらにユーザの新規追加や削除もできる画面なり機能なりを追加</h2>
+	<h2>10. さらにユーザ名にHTMLが含まれても表示崩れがおきないように改修</h2>
 	<form action="deleteConfirm.php" method="post">
 		<label for="name">select name you want to delete : </label>
 		<select name="name" id="name">
 			<?php foreach ($statement as $row): ?>
-				<option value="<?=$row["id"]?>"><?=$row["name"]?></option>
+				<option value="<?=($phpStudyDB->escape($row["id"]))?>"><?=($phpStudyDB->escape($row["name"]))?></option>
 			<?php endforeach; ?>
 		</select><br><br>
 		<button type="submit" name="operation" value="confirm">確認</button>
