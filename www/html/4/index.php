@@ -20,60 +20,60 @@
 	<h2>3. SQL課題.sql をインポートしてください。<br>（ここからPHPは使わずSQLをテキストファイルで残してください）</h2>
 	<p>課題ファイルがなかったので自作</p>
 	<ul>
-		<li><a href="sql/create-database.txt" target="_blank">create-database.txt</a></li>
-		<li><a href="sql/create-users-table.txt" target="_blank">create-users-table.txt</a></li>
-		<li><a href="sql/create-users_test_data-table.txt" target="_blank">create-users_test_data-table.txt</a></li>
-		<li><a href="sql/insert-users.txt" target="_blank">insert-users.txt</a></li>
-		<li><a href="sql/insert-users_test_data.txt" target="_blank">insert-users_test_data.txt</a></li>
+		<li><a href="sql/create-database.sql" target="_blank">create-database.sql</a></li>
+		<li><a href="sql/create-users-table.sql" target="_blank">create-users-table.sql</a></li>
+		<li><a href="sql/create-users_test_data-table.sql" target="_blank">create-users_test_data-table.sql</a></li>
+		<li><a href="sql/insert-users.sql" target="_blank">insert-users.sql</a></li>
+		<li><a href="sql/insert-users_test_data.sql" target="_blank">insert-users_test_data.sql</a></li>
 	</ul>
 	<hr>
 
 	<h2>4. usersテーブルを全て出力するselectのSQL</h2>
-	<a href="sql/4-4.txt" target="_blank">4-4.txt</a>
+	<a href="sql/4-4.sql" target="_blank">4-4.sql</a>
 	<hr>
 
 	<h2>5. 上記をstatusが0のみに絞り込んで出力するSQL</h2>
-	<a href="sql/4-5.txt" target="_blank">4-5.txt</a>
+	<a href="sql/4-5.sql" target="_blank">4-5.sql</a>
 	<hr>
 
 	<h2>6. 上記を学年の降順で出力するSQL</h2>
-	<a href="sql/4-6.txt" target="_blank">4-6.txt</a>
+	<a href="sql/4-6.sql" target="_blank">4-6.sql</a>
 	<hr>
 
 	<h2>7. 各クラス(学年と組の組合せ)ごとに何人の生徒がいるか？のSQL</h2>
-	<a href="sql/4-7.txt" target="_blank">4-7.txt</a>
+	<a href="sql/4-7.sql" target="_blank">4-7.sql</a>
 	<hr>
 
 	<h2>8. user_test_dataテーブルを全て出力するSQL</h2>
-	<a href="sql/4-8.txt" target="_blank">4-8.txt</a>
+	<a href="sql/4-8.sql" target="_blank">4-8.sql</a>
 	<hr>
 
 	<h2>9. 上記を生徒の名前をあわせて出力するSQL</h2>
-	<a href="sql/4-9.txt" target="_blank">4-9.txt</a>
+	<a href="sql/4-9.sql" target="_blank">4-9.sql</a>
 	<hr>
 
 	<h2>10. 上記を生徒ごとの合計点を出力するSQL</h2>
-	<a href="sql/4-10.txt" target="_blank">4-10.txt</a>
+	<a href="sql/4-10.sql" target="_blank">4-10.sql</a>
 	<hr>
 
 	<h2>11. テスト日ごとに各教科の平均点を出力するSQL</h2>
-	<a href="sql/4-11.txt" target="_blank">4-11.txt</a>
+	<a href="sql/4-11.sql" target="_blank">4-11.sql</a>
 	<hr>
 
 	<h2>12. 各クラス、試験日ごとに「教科ごとの平均」と「合計点の平均」を出力するSQL</h2>
-	<a href="sql/4-12.txt" target="_blank">4-12.txt</a>
+	<a href="sql/4-12.sql" target="_blank">4-12.sql</a>
 	<hr>
 
 	<h2>13. users テーブルに一行追加するSQL</h2>
-	<a href="sql/4-13.txt" target="_blank">4-13.txt</a>
+	<a href="sql/4-13.sql" target="_blank">4-13.sql</a>
 	<hr>
 
 	<h2>14. users テーブルの一行を変更（名前の更新を）するSQL</h2>
-	<a href="sql/4-14.txt" target="_blank">4-14.txt</a>
+	<a href="sql/4-14.sql" target="_blank">4-14.sql</a>
 	<hr>
 
 	<h2>15. users テーブルの一行を削除するSQL</h2>
-	<a href="sql/4-15.txt" target="_blank">4-15.txt</a>
+	<a href="sql/4-15.sql" target="_blank">4-15.sql</a>
 	<hr>
 
 	<h2>16. 以下を説明してください。</h2>
