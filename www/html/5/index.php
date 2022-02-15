@@ -83,5 +83,9 @@
 	<h2>13. 上記の画面をlogin.phpとし、ログイン成功後、メアドをSessionに保存してください</h2>
 	<a href="5-13/login.php" target="_blank">こちらに実装</a>
 	<hr>
+	
+	<h2>14. main.phpを用意し、アクセスするとログイン時はそのまま表示、未ログイン時はlogin.phpにリダイレクトとしてください</h2>
+	<a href="5-14/main.php" target="_blank">こちらに実装</a>
+	<hr>
 </body>
 </html>
