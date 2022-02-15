@@ -79,5 +79,9 @@
 	<a href="5-12/insert-users_idpass.sql" target="_blank">insert-users_idpass.sql</a><br>
 	<a href="5-12/index.php" target="_blank">こちらに実装</a>
 	<hr>
+	
+	<h2>13. 上記の画面をlogin.phpとし、ログイン成功後、メアドをSessionに保存してください</h2>
+	<a href="5-13/login.php" target="_blank">こちらに実装</a>
+	<hr>
 </body>
 </html>
