@@ -1,0 +1,1 @@
+ALTER TABLE php_study.idpass ADD name varchar(255) NOT NULL;
