@@ -103,5 +103,9 @@
 		の4カラムのテーブルを作成してください</h2>
 	<a href="5-17/posts_table.sql" target="_blank">posts_table.sql</a>
 	<hr>
+	
+	<h2>18. テキストボックスとテキストエリアを用い、上記にデータが挿入されるプログラムを記述</h2>
+	<a href="5-18/index.php" target="_blank">こちらに実装</a>
+	<hr>
 </body>
 </html>
