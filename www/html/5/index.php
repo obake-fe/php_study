@@ -95,5 +95,13 @@
 	<h2>16. ログアウト機能や、パスワードのハッシュ化を行うなど、ログイン機能を自分なりに完成させてください</h2>
 	<a href="5-16/login.php" target="_blank">こちらに実装</a>
 	<hr>
+	
+	<h2>17. 投稿ID：entry_id(Auto Increment)<br>
+		投稿者名：author<br>
+		投稿本文：message<br>
+		投稿日時：post_date<br>
+		の4カラムのテーブルを作成してください</h2>
+	<a href="5-17/posts_table.sql" target="_blank">posts_table.sql</a>
+	<hr>
 </body>
 </html>
