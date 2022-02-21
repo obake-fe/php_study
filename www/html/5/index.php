@@ -115,5 +115,10 @@
 	<h2>23. Humanクラスにmovingメソッドを作成し、インスタンス化後に住所を変更できるようにしてください。<br>movingメソッドの実行前後にintroduceメソッドを実行し、結果を確認してください</h2>
 	<a href="5-19/index.php" target="_blank">こちらに実装</a>
 	<hr>
+	
+	<h2>24. Humanクラスを継承してBuchoクラス、Hiraクラスを作成してください。</h2>
+	<h2>25. Humanクラスに$gradeプロパティを追加して、Hiraクラスに「平社員」Buchoクラスに「部長」を初期値として与えてください。<br>また、getGradeメソッドをHumanクラスに実装し、それぞれのクラスで設定された$gradeの値を返して下さい。<br>また、gradeの表示をintroduceメソッドに追記してください</h2>
+	<a href="5-24/index.php" target="_blank">こちらに実装</a>
+	<hr>
 </body>
 </html>
