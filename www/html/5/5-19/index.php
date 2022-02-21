@@ -28,6 +28,10 @@
 		public function introduce(): array {
 			return [$this->getName(), $this->getAddress(), $this->getSalary()];
 		}
+		
+		public function moving(string $address): void {
+			$this->address = $address;
+		}
 	}
 	
 	$human = new Human("tomo", "Tokyo", 30000);
@@ -52,6 +56,16 @@
 		<li><?="名前 : {$info[0]}"?></li>
 		<li><?="住所 : {$info[1]}"?></li>
 		<li><?="年収 : {$info[2]}"?></li>
+	</ul>
+	<h2>23. Humanクラスにmovingメソッドを作成し、インスタンス化後に住所を変更できるようにしてください。<br>movingメソッドの実行前後にintroduceメソッドを実行し、結果を確認してください</h2>
+	<?php
+		$human->moving("Osaka");
+		$fixedInfo = $human->introduce()
+	?>
+	<ul>
+		<li><?="名前 : {$fixedInfo[0]}"?></li>
+		<li><?="住所 : {$fixedInfo[1]}"?></li>
+		<li><?="年収 : {$fixedInfo[2]}"?></li>
 	</ul>
 </body>
 </html>
