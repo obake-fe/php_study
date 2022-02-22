@@ -118,6 +118,7 @@
 	
 	<h2>24. Humanクラスを継承してBuchoクラス、Hiraクラスを作成してください。</h2>
 	<h2>25. Humanクラスに$gradeプロパティを追加して、Hiraクラスに「平社員」Buchoクラスに「部長」を初期値として与えてください。<br>また、getGradeメソッドをHumanクラスに実装し、それぞれのクラスで設定された$gradeの値を返して下さい。<br>また、gradeの表示をintroduceメソッドに追記してください</h2>
+	<h2>26. Buchoクラスのオブジェクト定数BONUSにint型で値を設定してください。<br>また、staticでgetBonusメソッドを作成し、定数の値を取得できるようにしてください</h2>
 	<a href="5-24/index.php" target="_blank">こちらに実装</a>
 	<hr>
 </body>

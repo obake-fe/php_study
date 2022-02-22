@@ -5,6 +5,8 @@
 	
 	$bucho = new Bucho("田中", "東京", 40);
 	$hira = new Hira("鈴木", "大阪", 20);
+	
+	$bonus = Bucho::getBonus();
 
 ?>
 <!doctype html>
@@ -23,6 +25,9 @@
 		<li><?="{$bucho->getName()} : {$bucho->getGrade()}"?></li>
 		<li><?="{$hira->getName()} : {$hira->getGrade()}"?></li>
 	</ul>
-
+	<h2>26. Buchoクラスのオブジェクト定数BONUSにint型で値を設定してください。<br>また、staticでgetBonusメソッドを作成し、定数の値を取得できるようにしてください</h2>
+	<ul>
+		<li><?="ボーナス : {$bonus}万円"?></li>
+	</ul>
 </body>
 </html>
