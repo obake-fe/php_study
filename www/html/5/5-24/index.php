@@ -7,6 +7,12 @@
 	$hira = new Hira("鈴木", "大阪", 20);
 	
 	$bonus = Bucho::getBonus();
+	
+	$sato = new Bucho("佐藤", "福岡", 40);
+	$yoshida = new Hira("吉田", "京都", 20);
+	$matsuda = new Hira("松田", "神奈川", 20);
+	
+	$array = [$sato, $yoshida, $matsuda];
 
 ?>
 <!doctype html>
@@ -25,9 +31,33 @@
 		<li><?="{$bucho->getName()} : {$bucho->getGrade()}"?></li>
 		<li><?="{$hira->getName()} : {$hira->getGrade()}"?></li>
 	</ul>
+	
 	<h2>26. Buchoクラスのオブジェクト定数BONUSにint型で値を設定してください。<br>また、staticでgetBonusメソッドを作成し、定数の値を取得できるようにしてください</h2>
 	<ul>
 		<li><?="ボーナス : {$bonus}万円"?></li>
 	</ul>
+	
+	<h2>27. 部長クラスは年２回のボーナスがもらえるものとしてsalaryメソッドをオーバーライドし、実装しなおしてください。<br>その際、HumanクラスのgetSalaryメソッドを利用してください。</h2>
+	<ul>
+		<li><?="年収 : {$bucho->getSalary()}万円"?></li>
+	</ul>
+	
+	<h2>28. Hiraクラス2つとBuchoクラス1つのインスタンスをもつ配列を作成してください。<br>その配列をループし、それぞれのインスタンスに対してintroduceメソッドを実行してください。<br>その際、HumanクラスのgetSalaryメソッドを利用してください。</h2>
+	<table border="1">
+		<tr>
+			<th>名前</th>
+			<th>住所</th>
+			<th>年収</th>
+			<th>役職</th>
+		</tr>
+		<?php foreach ($array as $value): ?>
+			<tr>
+				<td><?=$value->introduce()[0]?></td>
+				<td><?=$value->introduce()[1]?></td>
+				<td><?=$value->introduce()[2]?></td>
+				<td><?=$value->introduce()[3]?></td>
+			</tr>
+		<?php endforeach; ?>
+	</table>
 </body>
 </html>

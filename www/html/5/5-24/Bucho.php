@@ -16,4 +16,9 @@ class Bucho extends Human2
 		{
 			return self::BONUS;
 		}
+	
+		public function getSalary(): int
+		{
+			return $this->salary * 12 + self::BONUS * 2;
+		}
 	}
