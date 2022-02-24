@@ -22,7 +22,7 @@
 <hr>
 
 <h2>2. laravelをインストールしてhello worldを表示してください。<br>なお、php artisan serveは使わずに、composerなど、必要なものがあるので準備してください</h2>
-<p></p>
+<a href="public/hello" target="_blank">こちらに実装</a>
 <hr>
 
 </body>
