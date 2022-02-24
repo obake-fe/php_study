@@ -1,6 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+    use App\Http\Controllers\AddController;
+    use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('hello', function () {
     return '<html><body><h1>Hello World</h1></body></html>';
 });
+
+Route::get('add', [AddController::class, 'index']);
+
+// Laravel8では使えない https://readouble.com/laravel/8.x/ja/controllers.html
+// Route::get('add', function () {
+//     return 'AddController@index';
+// });

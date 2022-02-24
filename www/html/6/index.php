@@ -25,5 +25,10 @@
 <a href="public/hello" target="_blank">こちらに実装</a>
 <hr>
 
+<h2>3. addページへのルート登録を行いページを表示してください。<br>その際、routeに直接書くパターンと、controllerを作るパターン２つ試してください。<br>(ルートの理解,controllerの理解)</h2>
+<p>routeに直接書くパターンは6-2で実装</p>
+<a href="public/add" target="_blank">controllerを作るパターンをこちらに実装</a>
+<hr>
+
 </body>
 </html>
