@@ -30,8 +30,12 @@
 <a href="public/add" target="_blank">controllerを作るパターンをこちらに実装</a>
 <hr>
 
-<h2>4. viewファイルをresource/views配下に起き、controllerからviewを呼び出してください</h2>
+<h2>4. viewファイルをresource/views配下に起き、controllerからviewを呼び出してください。</h2>
 <a href="public/test" target="_blank">こちらに実装</a>
+<hr>
+
+<h2>5. viewをbladeのテンプレートを使い、controllerで定義した変数を表示してください。</h2>
+<a href="public/test/hello" target="_blank">こちらに実装</a>
 <hr>
 
 </body>

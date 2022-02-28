@@ -27,9 +27,13 @@ Route::get('hello', function () {
 // 6-3
 Route::get('add', [AddController::class, 'index']);
 
-// 6-4
-Route::get('test', [TestController::class, 'index']);
 // Laravel8では使えない https://readouble.com/laravel/8.x/ja/controllers.html
 // Route::get('add', function () {
 //     return 'AddController@index';
 // });
+
+// 6-4
+Route::get('test', [TestController::class, 'index']);
+
+// 6-5
+Route::get('test/hello', [TestController::class, 'hello']);
