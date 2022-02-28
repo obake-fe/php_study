@@ -30,5 +30,9 @@
 <a href="public/add" target="_blank">controllerを作るパターンをこちらに実装</a>
 <hr>
 
+<h2>4. viewファイルをresource/views配下に起き、controllerからviewを呼び出してください</h2>
+<a href="public/test" target="_blank">こちらに実装</a>
+<hr>
+
 </body>
 </html>
