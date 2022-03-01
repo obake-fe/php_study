@@ -38,5 +38,8 @@
 <a href="public/test/hello" target="_blank">こちらに実装</a>
 <hr>
 
+<h2>6. マイグレーションを理解しよう。<br>マイグレーションで新しくtableを追加してください。<br>カラムは、Id(int)とname(text)など</h2>
+<hr>
+
 </body>
 </html>
