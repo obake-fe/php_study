@@ -38,7 +38,12 @@
 <a href="public/test/hello" target="_blank">こちらに実装</a>
 <hr>
 
-<h2>6. マイグレーションを理解しよう。<br>マイグレーションで新しくtableを追加してください。<br>カラムは、Id(int)とname(text)など</h2>
+<h2>6. マイグレーションを理解しよう。<br>マイグレーションで新しくtableを追加してください。<br>カラムは、Id(int)とname(text)など<br>マイグレーションで作ったテーブルをロールバックしてください。</h2>
+<hr>
+
+<h2>7. artisanコンソールの機能を使用し、[ php artisan hello ] コマンドを叩いた時に 「hello world」とターミナル上に表示されるようにプログラムを作成してください。</h2>
+<hr>
+
 <hr>
 
 </body>
