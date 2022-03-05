@@ -39,17 +39,20 @@
 <hr>
 
 <h2>6. マイグレーションを理解しよう。<br>マイグレーションで新しくtableを追加してください。<br>カラムは、Id(int)とname(text)など<br>マイグレーションで作ったテーブルをロールバックしてください。</h2>
+<a href="https://github.com/obake-fe/php_study/commit/67ad35226fa0c425084107284a066c962931a2f0" target="_blank" rel="noreferrer">commit log</a>
 <hr>
 
 <h2>7. artisanコンソールの機能を使用し、[ php artisan hello ] コマンドを叩いた時に 「hello world」とターミナル上に表示されるようにプログラムを作成してください。</h2>
+<a href="https://github.com/obake-fe/php_study/commit/d233bc77316ace7c7e1550e811d169e0e01aaa48" target="_blank" rel="noreferrer">commit log</a>
 <hr>
 
+
 <h2>8. 新しく追加したtableに、insertできるような処理を書いてください。<br>その際、artisanコンソールの機能を使い、コマンドラインから実行できるようにしてください<br>(modelを使用)</h2>
+<a href="https://github.com/obake-fe/php_study/commit/ade24ff8719a870ec206cd9b42c41e00456fb0c0" target="_blank" rel="noreferrer">commit log</a>
 <hr>
 
 <h2>9. controllerからmodelを呼び出し、画面で入力したnameをdbに保存するような機能を作ってください。<br>この際、FormRequestを利用し、nameが5文字以下でアルファベットのみであることのバリデーションをおこなってください</h2>
 <a href="public/person/add" target="_blank">こちらに実装</a>
-<hr>
 
 </body>
 </html>
