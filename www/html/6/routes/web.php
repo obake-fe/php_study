@@ -1,6 +1,7 @@
 <?php
 
     use App\Http\Controllers\AddController;
+    use App\Http\Controllers\PersonController;
     use App\Http\Controllers\TestController;
     use Illuminate\Support\Facades\Route;
 
@@ -37,3 +38,7 @@ Route::get('test', [TestController::class, 'index']);
 
 // 6-5
 Route::get('test/hello', [TestController::class, 'hello']);
+
+// 6-9
+Route::get('person/add', [PersonController::class, 'add']);
+Route::post('person/add', [PersonController::class, 'create']);

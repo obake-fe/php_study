@@ -47,6 +47,8 @@
 <h2>8. 新しく追加したtableに、insertできるような処理を書いてください。<br>その際、artisanコンソールの機能を使い、コマンドラインから実行できるようにしてください<br>(modelを使用)</h2>
 <hr>
 
+<h2>9. controllerからmodelを呼び出し、画面で入力したnameをdbに保存するような機能を作ってください。<br>この際、FormRequestを利用し、nameが5文字以下でアルファベットのみであることのバリデーションをおこなってください</h2>
+<a href="public/person/add" target="_blank">こちらに実装</a>
 <hr>
 
 </body>
